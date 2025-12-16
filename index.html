@@ -1,28 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nathan Culmer's Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* Basic Reset and Styling (Highly Recommended) */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Layout Structure (Example using Flexbox for organization) */
+        #main-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <h2>A Comparison of Lexical Tokenization Methods</h2>
-    <p>
-        Honors research project. I compared several methods of tokenization in a simple sentiment analysis task.<br>
+
+    <header>
+        <h1>Nathan Culmer</h1>
+        <p>Master's student in Computer Science</p>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+               I am currently a master's student in computer science at the University of Akron.
+            </p>
+            <p>
+                **Key Skills:** HTML, CSS, [Your Skill 3], [Your Skill 4]
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <h3>A Comparison of Lexical Tokenization Methods</h3>
+                    <p>Honors research project. I compared several methods of tokenization in a simple sentiment analysis task.<br>
         Primarily, I wanted to compare morphological tokenization and Wordpiece tokenization, with the hypothesis that morphological tokenization would perform better.<br>
         I also looked at inserting tokens to indicate capitalization for non-case-sensitive tokenization methods.<br>
-        The results were somewhat inconclusive. I think it was because the task is pretty simple; a more complex task (e.g. translation) could have better results.
-    </p>
-    <a href="https://ideaexchange.uakron.edu/honors_research_projects/1831/">Link to the project on the University of Akron IdeaExchange site</a>
-    <h2>Transfer Learning for Ionic Liquid Property Prediction</h2>
-    <p>
-        Research work from my time as a research assistant in the <a href="https://blogs.uakron.edu/nrt-hde/"> NRT-HDR: Graduate Traineeship on Advances in Materials Science Using Machine Learning</a>.<br>
+        The results were somewhat inconclusive. I think it was because the task is pretty simple; a more complex task (e.g. translation) could have better results.</p>
+                    <p>
+                        <a href="https://example.com/project-1" target="_blank">View work on the University of Akron's IdeaExchange &rarr;</a>
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Transfer Learning for Ionic Liquid Property Prediction</h3>
+                    <p>Research work from my time as a research assistant in the <a href="https://blogs.uakron.edu/nrt-hde/"> NRT-HDR: Graduate Traineeship on Advances in Materials Science Using Machine Learning</a>.<br>
         This work built on the series of works <i>Extensive Databases and Group Contribution QSPRs of Ionic Liquid Properties</i> from Dr. Kamil Paduszynski.<br>
         These works modelled viscosity, surface tension, and density of ionic liquids from data on the functional groups present in those liquids.<br>
         We looked at how knowledge could be transferred from one model to another, with the goal of improving training time and required dataset size for modelling new properties.<br>
         We also looked at how pruning could be used to reduce the size of the model to increase explainability, and how pruning networks would affect the knowledge transfer.<br>
-        This poster was designed by me and presented at the annual symposium for our research program.
-    </p>
-    <img src="Transfer Learning Poster.png" alt="Poster of Transfer Learning Results" width="33%">
+        This poster was designed by me and presented at the annual symposium for our research program.</p>
+                    <img src="Transfer Learning Poster.png" alt="Poster with Transfer Learning Results" width="400">
+                </article>
+
+                <article class="project-card">
+                    <h3>Neural Network Library with CUDA support</h3>
+                    <p>I built a simple C++/CUDA library for neural networks. Still a WIP, might be kinda buggy.</p>
+                </article>
+
+            </div>
+            
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you would like to contact me, you can do so here:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:nrc61@uakron.edu">nrc61@uakron.edu</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nathanculmer" target="_blank">/in/nathanculmer</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Initial template provided by Google Gemini, because I haven't worked with HTML/CSS in a while.</p>
+    </footer>
+
 </body>
 </html>
